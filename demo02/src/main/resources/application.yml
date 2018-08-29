@@ -1,0 +1,19 @@
+
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@192.168.88.65:1521:orcl
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    username: dlunionpay
+    password: dlunionpay
+    tomcat:
+      #最大活跃数
+      max-active: 20
+      #初始化数量
+      initial-size: 1
+      #最大连接等待超时时间
+      max-wait: 60000
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
